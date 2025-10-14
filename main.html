@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.social-icons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin: 0 20px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-menu ul li a:hover {
+    color: #007bff;
+}
+
+        .name-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .name {
+            font-size: 48px;
+            color: #333;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+        }
+
+        .name-container::before,
+        .name-container::after,
+        .name-container .circle {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid #007bff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .name-container::before {
+            width: 120px;
+            height: 120px;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        .name-container::after {
+            width: 160px;
+            height: 160px;
+            animation: blink 1.5s infinite;
+        }
+
+        .name-container .circle {
+            width: 200px;
+            height: 200px;
+            animation: puff 3s infinite ease-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 0.3;
+            }
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes puff {
+            0% {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 0.2;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1.4);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="social-icons">
+          
+           <a href="https://www.linkedin.com/in/tamilarasan-murugan-0b74a0248" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/tamilarasanm26" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="name-container">
+            <h1 class="name">T</h1>
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+</html>
