@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="form-container">
+
+    <form id="studentForm">
+
+
+      <div class="form-section">
+        <div class="form-row">
+          <label for="firstName" class="form-label required">First Name</label>
+           <input type="text" id="firstName" placeholder="First Name" required>
+          <p>(max 30 charcters A-Z a-z)</p>
+        </div>
+
+        <div class="form-row">
+          <label for="lastName" class="form-label required">Last Name</label>
+          <input type="text" id="lastName" placeholder="Last Name" required>
+          <p>(max 30 charcters A-Z a-z)</p>
+        </div>
+
+        <div class="form-row">
+          <label class="form-label required">Date Of Birth</label>
+          <div class="dob-container">
+            <select id="day" required>
+              <option value="">Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+
+            </select>
+            <select id="month" required>
+              <option value="">Month</option>
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+            </select>
+            <select id="year" required>
+              <option value="">Year</option>
+              <option value="1990">1990</option>
+              <option value="1991">1991</option>
+              <option value="1992">1992</option>
+              <option value="1993">1993</option>
+              <option value="1994">1994</option>
+              <option value="1995">1995</option>
+              <option value="1996">1996</option>
+              <option value="1997">1997</option>
+              <option value="1998">1998</option>
+              <option value="1999">1999</option>
+              <option value="2000">2000</option>
+              <option value="2001">2001</option>
+              <option value="2002">2002</option>
+              <option value="2003">2003</option>
+              <option value="2004">2004</option>
+              <option value="2005">2005</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="email" class="form-label required">Email Id</label>
+          <input type="email" id="email" placeholder="Email Id" required>
+        </div>
+
+        <div class="form-row">
+          <label class="form-label required">Gender</label>
+          <div class="gender-container">
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="address" class="form-label required">Address</label>
+          <textarea id="address" class="address-field" rows="3" required></textarea>
+        </div>
+      </div>
+
+
+      <div class="form-section">
+        <div class="form-row">
+          <label for="pincode" class="form-label required">Pin Code</label>
+          <input type="text" id="pincode" placeholder="Pin Code" required>
+        </div>
+
+        <div class="form-row">
+          <label for="state" class="form-label required">State</label>
+          <input type="text" id="state" placeholder="State"  required>
+        </div>
+
+        <div class="form-row">
+          <label for="city" class="form-label required">City</label>
+          <input type="text" id="city" placeholder="City"  required>
+        </div>
+
+        <div class="form-row">
+          <label for="country" class="form-label required">Country</label>
+          <input type="text" id="country" placeholder="Country"  required>
+        </div>
+      </div>
+
+
+      <div class="form-section">
+        <div class="form-row">
+          <label class="form-label required">Hobbies</label>
+          <div class="hobbies-container">
+            <label><input type="checkbox" value="drawing"> Drawing</label>
+            <label><input type="checkbox" value="singing"> Singing</label>
+            <label><input type="checkbox" value="dancing"> Dancing</label>
+            <label><input type="checkbox" value="sketching"> Sketching</label>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="form-section">
+        <div class="form-row">
+          <label class="form-label required">Qualification</label>
+          <div class="table-responsive">
+            <table class="table" border="1" cellspacing="0" cellpadding="8" width="100%">
+              <thead>
+                <tr>
+                  <th>S.No.</th>
+                  <th>Examination</th>
+                  <th>Board</th>
+                  <th>Percentage</th>
+                  <th>Year Of Passing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><input type="text" name="exam1" placeholder="Examination"  required></td>
+                  <td><input type="text" name="board1" placeholder="Board" required></td>
+                  <td><input type="text" name="percentage1"placeholder="Percentage" required></td>
+                  <td><input type="text" name="year1" placeholder="Year Of Passing" required></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><input type="text" name="exam2" placeholder="Examination" required></td>
+                  <td><input type="text" name="board2" placeholder="Board" required></td>
+                  <td><input type="text" name="percentage2" placeholder="Percentage" required></td>
+                  <td><input type="text" name="year2" placeholder="Year Of Passing" required></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><input type="text" name="exam3" placeholder="Examination" required></td>
+                  <td><input type="text" name="board3" placeholder="Board" required></td>
+                  <td><input type="text" name="percentage3" placeholder="Percentage" required></td>
+                  <td><input type="text" name="year3" placeholder="Year Of Passing" required></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="form-section">
+        <div class="form-row">
+          <label class="form-label required">Courses</label>
+          <div class="courses-container">
+            <label><input type="radio" name="gender" value="male" required>BCA</label>
+            <label><input type="radio" name="gender" value="female">MCA</label>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="text-center">
+        <button type="submit" class="submit-btn">Send Now</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>
