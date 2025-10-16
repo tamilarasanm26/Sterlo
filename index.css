@@ -99,8 +99,7 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-weight: 500;
-    color: #333;
+    color: #7e7d7d;;
     cursor: pointer;
   }
   
